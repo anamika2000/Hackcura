@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// To hold paths
+import { Route, Switch } from 'react-router';
+import Homepage from './components/Homepage.js';
+import Aboutpage from './components/Aboutpage.js';
+import Navbar from './components/Navbar.js';
+import Blogspage from './components/Blogspage.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (<>
+            <Navbar/>
+            {/* add paths here */}
+              <Switch>
+                  <Route exact path = '/' component={Homepage} />
+                  <Route exact path = '/blogs' component={Blogspage} />
+                  <Route exact path = '/about' component={Aboutpage} />
+
+              </Switch>
+          </>
   );
 }
 
