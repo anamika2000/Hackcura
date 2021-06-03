@@ -9,3 +9,11 @@
 .shadow_effect:hover{
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
+.Unordered_list li{
+    padding:8px 0;
+}
+.Unordered_list li:hover{
+    color: #20C20E;
+    text-transform: uppercase;
+    font-weight:550;
+}

@@ -12,7 +12,7 @@ function App() {
             <Navbar/>
             {/* add paths here */}
               <Switch>
-                  <Route exact path = '/' component={Homepage} />
+                  <Route exact path = '/Hackcura_frontend' component={Homepage} />
                   <Route exact path = '/blogs' component={Blogspage} />
                   <Route exact path = '/about' component={Aboutpage} />
                   <Route exact path = '/contactus' component={ContactUs}/>

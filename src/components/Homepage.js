@@ -25,6 +25,14 @@ const Homepage = (props) => {
       from: { rotateZ: 180 },
       to: { rotateZ: 360 },
     })
+    const styles1 = useSpring({
+      loop: true,
+      to: [
+        { opacity: 1, color: '#1ebd36' },
+        { opacity: 0, color: 'rgb(14,26,19)' },
+      ],
+      from: { opacity: 0, color: 'green' },
+    })
   return(
     <>
     
@@ -38,8 +46,8 @@ const Homepage = (props) => {
 
     <section className="container">
     <div className="row my-5 py-5">
-      <div className="col-lg-6 col-10 mx-auto">
-        <h2 style={{color:"#20C20E"}}>Who we are ?</h2>
+      <div className="col-lg-6 col-10 mx-auto text-center">
+        <animated.h2 style={styles1}>Who we are ?</animated.h2>
         <p>We are a Cyber Security Organization
             providing end-to-end security solutions and
             consultancy. We provide high end security
@@ -78,6 +86,64 @@ const Homepage = (props) => {
 
         )
       })}        
+      </div>
+      <div className="row">
+        <div className="col-lg-4 col-12">
+          <h1 className="ms-3 ms-lg-0">OTHER <span style= {{color:"#20C20E"}}>SERVICES</span></h1>
+        </div>
+      </div>
+      <div className="row my-5">
+        <div className="col-lg-6 col-10 mx-auto ">
+          <div className = "row">
+            <div className="col-lg-8 mx-auto">
+              <h2>CORPORATE TRAINING</h2>
+            </div>
+          </div>
+          <div className = "row my-3">
+            <div className="col-lg-8 mx-auto">
+              <ul className="Unordered_list">
+                <li>VAPT</li>
+                <li>Secure Code Review</li>
+                <li>Security Awareness</li>
+                <li>Infra/Host Penetration Testing</li>
+                <li>Auditing (Firewall Rules & Cloud Infra)</li>
+                <li>Mobile Application</li>
+                <ol>
+                  <li>Android (Static and Dynamic)</li>
+                  <li>ios (Static and Dynamic)</li>
+                </ol>
+                <li>API Penetration Testing</li>
+                <li>Industry Standard tools like Burp, Nessus, Acunetix etc</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6 col-10 mx-auto">
+          <div className = "row">
+            <div className="col-lg-8 mx-auto">
+              <h3>WEBINAR, SEMINAR, WORKSHOP & TRAINING</h3>
+            </div>
+          </div>
+          <div className = "row my-3">
+            <div className="col-lg-8 mx-auto">
+              <ul className="Unordered_list">
+                <li>VAPT</li>
+                <li>Secure Code Review</li>
+                <li>Security Awareness</li>
+                <li>Infra/Host Penetration Testing</li>
+                <li>Auditing (Firewall Rules & Cloud Infra)</li>
+                <li>Mobile Application</li>
+                <ol>
+                  <li>Android (Static and Dynamic)</li>
+                  <li>ios (Static and Dynamic)</li>
+                </ol>
+                <li>API Penetration Testing</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     </>
