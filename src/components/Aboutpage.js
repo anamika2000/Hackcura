@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/Aboutpage.css';
 import userimage from './images/user.jpg';
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from 'react-spring';
 
 const Aboutpage = () => {
   const styles = useSpring({
