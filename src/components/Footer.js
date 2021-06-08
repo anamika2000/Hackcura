@@ -9,7 +9,7 @@ const Footer = (props) => {
             <div className="col-lg-6 col-5 mx-auto">
                 <div className="my-5 mx-lg-0">
                     <h2 style={{color:"#ffffff"}}>Follow <span style={{color:"#20C20E"}}> Us</span></h2>
-                    
+                    <i className="fas fa-user"></i>
                 </div>
             </div>
             <div className="col-lg-4 d-none d-lg-block">

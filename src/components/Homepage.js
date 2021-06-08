@@ -87,33 +87,33 @@ const Homepage = (props) => {
         )
       })}        
       </div>
-      <div className="row">
+      <div className="row my-5">
         <div className="col-lg-4 col-12">
           <h1 className="ms-3 ms-lg-0">OTHER <span style= {{color:"#20C20E"}}>SERVICES</span></h1>
         </div>
       </div>
       <div className="row my-5">
         <div className="col-lg-6 col-10 mx-auto ">
-          <div className = "row">
+          <div className = "row ">
             <div className="col-lg-8 mx-auto">
-              <h2>CORPORATE TRAINING</h2>
+              <h2> CORPORATE TRAINING </h2>
             </div>
           </div>
           <div className = "row my-3">
             <div className="col-lg-8 mx-auto">
               <ul className="Unordered_list">
-                <li>VAPT</li>
-                <li>Secure Code Review</li>
-                <li>Security Awareness</li>
-                <li>Infra/Host Penetration Testing</li>
-                <li>Auditing (Firewall Rules & Cloud Infra)</li>
-                <li>Mobile Application</li>
+                <li className = "py-1">VAPT</li>
+                <li className = "py-1">Secure Code Review</li>
+                <li className = "py-1">Security Awareness</li>
+                <li className = "py-1">Infra/Host Penetration Testing</li>
+                <li className = "py-1">Auditing (Firewall Rules & Cloud Infra)</li>
+                <li className = "py-1">Mobile Application</li>
                 <ol>
-                  <li>Android (Static and Dynamic)</li>
-                  <li>ios (Static and Dynamic)</li>
+                  <li className = "py-1">Android (Static and Dynamic)</li>
+                  <li className = "py-1">ios (Static and Dynamic)</li>
                 </ol>
-                <li>API Penetration Testing</li>
-                <li>Industry Standard tools like Burp, Nessus, Acunetix etc</li>
+                <li className = "py-1">API Penetration Testing</li>
+                <li className = "py-1">Industry Standard tools like Burp, Nessus, Acunetix etc</li>
 
               </ul>
             </div>
@@ -122,23 +122,23 @@ const Homepage = (props) => {
         <div className="col-lg-6 col-10 mx-auto">
           <div className = "row">
             <div className="col-lg-8 mx-auto">
-              <h3>WEBINAR, SEMINAR, WORKSHOP & TRAINING</h3>
+              <h3> WEBINAR, SEMINAR, WORKSHOP & TRAINING </h3>
             </div>
           </div>
           <div className = "row my-3">
             <div className="col-lg-8 mx-auto">
               <ul className="Unordered_list">
-                <li>VAPT</li>
-                <li>Secure Code Review</li>
-                <li>Security Awareness</li>
-                <li>Infra/Host Penetration Testing</li>
-                <li>Auditing (Firewall Rules & Cloud Infra)</li>
-                <li>Mobile Application</li>
+                <li className = "py-1">VAPT</li>
+                <li className = "py-1">Secure Code Review</li>
+                <li className = "py-1">Security Awareness</li>
+                <li className = "py-1">Infra/Host Penetration Testing</li>
+                <li className = "py-1">Auditing (Firewall Rules & Cloud Infra)</li>
+                <li className = "py-1">Mobile Application</li>
                 <ol>
-                  <li>Android (Static and Dynamic)</li>
-                  <li>ios (Static and Dynamic)</li>
+                  <li className = "py-1">Android (Static and Dynamic)</li>
+                  <li className = "py-1">ios (Static and Dynamic)</li>
                 </ol>
-                <li>API Penetration Testing</li>
+                <li className = "py-1">API Penetration Testing</li>
 
               </ul>
             </div>
