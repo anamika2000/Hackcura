@@ -1,6 +1,8 @@
 .card_item{
     border:none !important;
 }
+
+
 .shadow_effect{
     box-shadow: 0;
     transition: box-shadow 1.9s, opacity 0.5s;
@@ -16,3 +18,37 @@
 .Unordered_list li:hover{
     color: #20C20E;
 }
+.heading_top{
+    height:100vh;
+}
+
+#myVideo {
+    width:100%;
+    position:absolute;
+    height:100vh;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .heading_top_container{
+      padding-top:20%;
+      color:white;
+  }
+  .Main_heading{
+      font-weight: 700;
+      font-size:110px;
+      letter-spacing: 5px;
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .Main_heading{
+        margin-top:50%;
+        font-weight: 400;
+        font-size:60px;
+    }
+
+  }

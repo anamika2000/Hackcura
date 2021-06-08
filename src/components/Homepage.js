@@ -3,6 +3,7 @@ import './style/Homepage.css';
 import image_footer from './images/footerimg.png';
 import rimage from './images/rotate.png';
 import { useSpring,animated } from 'react-spring'
+import vid from './images/mol.mp4';
 
 
 
@@ -29,7 +30,7 @@ const Homepage = (props) => {
       loop: true,
       to: [
         { opacity: 1, color: '#1ebd36' },
-        { opacity: 0, color: 'rgb(14,26,19)' },
+        { opacity: 0, color: 'rgb(14,26,19)'},
       ],
       from: { opacity: 0, color: 'green' },
     })
@@ -37,9 +38,19 @@ const Homepage = (props) => {
     <>
     
     <section className="container-fluid">
-      <div className="row mt-4">
-        <div className="row mt-5">
-          
+      <div className="row">
+        <div className="col-lg-12">
+          <video className="videos" autoPlay = "autoplay" muted loop = "loop" id="myVideo">
+            <source src={vid} type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div className="row heading_top">
+        <div className=" col-lg-5 col-10 heading_top_container mx-auto text-center">
+          <h1 className="Main_heading">HACKCURA</h1>
+          <p>“Hackcura has the vision of empowering people with a secure cyber world.”</p>
         </div>
       </div>
     </section>
