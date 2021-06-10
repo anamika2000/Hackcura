@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './style/Homepage.css';
 import image_footer from './images/footerimg.png';
 import rimage from './images/rotate.png';
@@ -35,7 +36,7 @@ const Homepage = (props) => {
       from: { opacity: 0, color: 'green' },
     })
   return(
-    <>
+    <div className="home">
     
     <section className="container-fluid">
       <div className="row">
@@ -44,14 +45,16 @@ const Homepage = (props) => {
             <source src={vid} type="video/mp4" />
           </video>
         </div>
+        
       </div>
-    </section>
-    <section>
+      
       <div className="row heading_top">
-        <div className=" col-lg-5 col-10 heading_top_container mx-auto text-center">
+        <div className=" col-lg-8 col-12 heading_top_container text-light mx-auto text-center">
           <h1 className="Main_heading">HACKCURA</h1>
-          <p>“Hackcura has the vision of empowering people with a secure cyber world.”</p>
+          <p className="Main_tagline my-3">“Hackcura has the vision of empowering people with a secure cyber world.”</p>
+          <NavLink className="contact_button" to="/contactus">Contact Us</NavLink>
         </div>
+        
       </div>
     </section>
 
@@ -157,7 +160,7 @@ const Homepage = (props) => {
         </div>
       </div>
     </section>
-    </>
+    </div>
    )
 
  }
