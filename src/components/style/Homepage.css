@@ -73,8 +73,8 @@
   }
   .contact_button{
       border-radius: 10px;
-      color:white;
-      background-color:black;
+      color:black;
+      background-color:white;
       border:none;
       padding:8px;
       font-weight: 500;
@@ -84,8 +84,8 @@
       margin-top: 10px;
     }
   .contact_button:hover{
-      color:black;
-      background-color: white;
+      color:white;
+      background-color: #20C20E;
   }
 
   @media only screen and (max-width: 600px){

@@ -4,7 +4,7 @@ import './style/Homepage.css';
 import image_footer from './images/footerimg.png';
 import rimage from './images/rotate.png';
 import { useSpring,animated } from 'react-spring'
-import vid from './images/mol.mp4';
+import vid from './images/Line1.mp4';
 
 
 
@@ -58,7 +58,7 @@ const Homepage = (props) => {
       </div>
     </section>
 
-    <section className="container">
+    <section className="container my-5">
     <div className="row my-5 py-5">
       <div className="col-lg-6 col-10 mx-auto text-center">
         <animated.h2 style={styles1}>Who we are ?</animated.h2>
