@@ -6,7 +6,7 @@ const Footer = (props) => {
   return(
     <div className="container-fluid background">
         <div className="row ">
-            <div className="col-lg-6 col-5 mx-auto">
+            <div className="col-lg-6 col-12 mx-auto text-lg-start text-center">
                 <div className="my-5 mx-lg-0">
                     <h2 style={{color:"#ffffff"}}>Follow <span style={{color:"#20C20E"}}> Us</span></h2>
                     <p style={{color:'white'}}>Hackcura Private limited<br/>New Delhi, 110005</p>
