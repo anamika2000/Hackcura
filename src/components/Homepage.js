@@ -1,21 +1,32 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './style/Homepage.css';
-import image_footer from './images/footerimg.png';
+import image1 from './images/PT.png';
+import image2 from './images/MPT.png';
+import image3 from './images/API.png';
+import image4 from './images/CLD.png';
+import image7 from './images/SRF.png';
+import image5 from './images/THK.png';
+import image6 from './images/SCR.png';
+import image8 from './images/NPT.jpg';
 import rimage from './images/rotate.png';
 import { useSpring,animated } from 'react-spring'
 import vid from './images/Line1.mp4';
 
+import Typewriter from "typewriter-effect";
 
 
-const data = [{image:image_footer,title:"WEB APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"MOBILE APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"API PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"NETWORK PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"SERVER AND CLOUD SECURITY AUDITS",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"THICK CLIENT APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"SOURCE CODE REVIEW",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
-              {image:image_footer,title:"AUDITS OF SWITCHES ,ROUTERS AND FIREWALL RULES",about:"Some quick example text to build on the card title and make up the bulk of the card's content."}
+
+
+
+const data = [{image:image1,title:"WEB APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image2,title:"MOBILE APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image3,title:"API PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image8,title:"NETWORK PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image4,title:"SERVER AND CLOUD SECURITY AUDITS",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image5,title:"THICK CLIENT APPLICATION PENETRATION TESTING",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image6,title:"SOURCE CODE REVIEW",about:"Some quick example text to build on the card title and make up the bulk of the card's content."},
+              {image:image7,title:"AUDITS OF SWITCHES ,ROUTERS AND FIREWALL RULES",about:"Some quick example text to build on the card title and make up the bulk of the card's content."}
             
             ]
 
@@ -49,9 +60,18 @@ const Homepage = (props) => {
       </div>
       
       <div className="row heading_top">
-        <div className=" col-lg-8 col-12 heading_top_container text-light mx-auto text-center">
-          <h1 className="Main_heading">HACKCURA</h1>
-          <p className="Main_tagline my-3">“Hackcura has the vision of empowering people with a secure cyber world.”</p>
+        <div className=" col-lg-7 col-12 heading_top_container text-light mx-auto text-center">
+          {/* <h1 className="Main_heading">HACKCURA</h1> */}
+          <h1 className="Main_heading"><Typewriter 
+            options={{
+              autoStart: true,
+              loop: true,
+            }}
+            onInit ={(typewriter)=>{
+              typewriter.typeString("HACKCURA").pauseFor(1500).deleteAll().pauseFor(1000).start()
+            }}
+          /></h1>
+          <p className="Main_tagline my-3">“Hackcura has the vision of empowering people with a secure cyber world”</p>
           <NavLink className="contact_button" to="/contactus">Contact Us</NavLink>
         </div>
         
