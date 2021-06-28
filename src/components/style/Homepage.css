@@ -101,5 +101,8 @@
         letter-spacing:1px;
         font-size:8px;
     }
+    .shadow_effect:hover{
+        box-shadow: none !important;
+    }
 
   }

@@ -62,16 +62,17 @@ const Homepage = (props) => {
       <div className="row heading_top">
         <div className=" col-lg-7 col-12 heading_top_container text-light mx-auto text-center">
           {/* <h1 className="Main_heading">HACKCURA</h1> */}
-          <h1 className="Main_heading"><Typewriter 
+          <h1 className="Main_heading">HACKCURA</h1>
+          <p className="Main_tagline my-3">
+          <Typewriter 
             options={{
               autoStart: true,
               loop: true,
             }}
             onInit ={(typewriter)=>{
-              typewriter.typeString("HACKCURA").pauseFor(1500).deleteAll().pauseFor(1000).start()
+              typewriter.typeString("“Hackcura has the vision of empowering people with a secure cyber world”").pauseFor(1500).deleteAll().pauseFor(1000).start()
             }}
-          /></h1>
-          <p className="Main_tagline my-3">“Hackcura has the vision of empowering people with a secure cyber world”</p>
+          /></p>
           <NavLink className="contact_button" to="/contactus">Contact Us</NavLink>
         </div>
         

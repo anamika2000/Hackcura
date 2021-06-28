@@ -26,7 +26,7 @@ const Blogspage = (props) => {
               <div className="col-lg-9 col-12">
                 <h3 className="mt-3">{value.name}</h3>
                 <h5 style = {{color:"#20C20E"}}>{value.jtitle}</h5>
-                <p className="text-lg-end text-center me-lg-5 me-0" style={{fontWeight:"600"}}>2{value.DOBlog}</p>
+                <p className="text-lg-end text-center me-lg-5 me-0" style={{fontWeight:"600"}}>{value.DOBlog}</p>
                 <h3>{value.Btitle}</h3>
                 <p>{value.sample_content}</p>
                 <button className ="btn btn-success mb-4" to={value.link}>Continue Reading</button>
