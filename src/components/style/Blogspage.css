@@ -1,3 +1,5 @@
+/* OLD Component's CSS */
+
 .main_heading{
     letter-spacing:3px;
     text-transform:uppercase;
@@ -14,4 +16,11 @@
 .blog-container:hover{
     border: 2px solid #20C20E;
     border-radius: 25px;
+}
+
+
+/* NEW Component's CSS */
+
+.main_image{
+    margin-left: 60px;
 }

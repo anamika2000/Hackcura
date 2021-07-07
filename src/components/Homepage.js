@@ -34,7 +34,7 @@ const data = [{image:image1,title:"WEB APPLICATION PENETRATION TESTING",about:"S
 
 const Homepage = (props) => {
     const styles = useSpring({
-      loop: true,
+      loop: false,
       from: { rotateZ: 180 },
       to: { rotateZ: 360 },
     })
@@ -73,7 +73,7 @@ const Homepage = (props) => {
               typewriter.typeString("“Hackcura has the vision of empowering people with a secure cyber world”").pauseFor(1500).deleteAll().pauseFor(1000).start()
             }}
           /></p>
-          <NavLink className="contact_button" to="/contactus">Contact Us</NavLink>
+          <NavLink className="contact_button" to="/contactus"> Contact Us</NavLink>
         </div>
         
       </div>

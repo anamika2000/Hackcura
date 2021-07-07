@@ -1,5 +1,6 @@
 import React from 'react';
 import './style/Blogspage.css';
+import { NavLink } from 'react-router-dom';
 
 import userimage from './images/user.jpg';
 
@@ -20,16 +21,17 @@ const Blogspage = (props) => {
           return(
             <div className="blog-container text-lg-start text-center my-5" key={index}>
             <div className="row">
-              <div className="col-lg-3 d-lg-block d-none">
-                <img className="img-fluid ms-5 mt-4" style = {{height:'250px'}} src={userimage} alt="user"/>
+              <div className="col-lg-3">
+                <img className=" text-center img-fluid main_image mt-4  d-lg-block d-none" style = {{height:'250px'}} src={userimage} alt="user"/>
+                <h4 className="mt-3 text-center">{value.name}</h4>
+                <h5 className="text-center" style = {{color:"#20C20E"}}>{value.jtitle}</h5>   
+                <p className="text-center" style={{fontWeight:"600"}}>{value.DOBlog}</p>
               </div>
-              <div className="col-lg-9 col-12">
-                <h3 className="mt-3">{value.name}</h3>
-                <h5 style = {{color:"#20C20E"}}>{value.jtitle}</h5>
-                <p className="text-lg-end text-center me-lg-5 me-0" style={{fontWeight:"600"}}>{value.DOBlog}</p>
-                <h3>{value.Btitle}</h3>
-                <p>{value.sample_content}</p>
-                <button className ="btn btn-success mb-4" to={value.link}>Continue Reading</button>
+              <div className="col-lg-9 col-12 text-center">
+                {/* <h3>{value.Btitle}</h3>
+                <p>{value.sample_content}</p> */}
+                <iframe className="col-11 mt-4" src="https://abhishek-098.github.io/CovidInfo/" style={{height:'250px'}} title="Some web"/><br/>
+                <NavLink to="https://abhishek-098.github.io/CovidInfo/" target="_blank"><button className ="btn btn-success mb-4 mt-4 ">Continue Reading</button></NavLink>
               </div>
             </div>
           </div>
