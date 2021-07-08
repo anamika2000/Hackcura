@@ -16,6 +16,7 @@ function App() {
                   <Route exact path = '/blogs' component={Blogspage} />
                   <Route exact path = '/about' component={Aboutpage} />
                   <Route exact path = '/contactus' component={ContactUs}/>
+                  
 
               </Switch>
               <Footer/>

@@ -1,10 +1,8 @@
 import React from 'react'
 import './style/Footer.css';
-
-import { NavLink } from 'react-router-dom';
 import image_footer from './images/footerimg.png';
-import { FaInstagram,FaRegEnvelope,FaRegCopyright } from "react-icons/fa";
-import { AiOutlineLinkedin,AiOutlineFacebook } from "react-icons/ai";
+import { FaInstagramSquare,FaRegCopyright,FaTwitterSquare ,FaFacebookSquare,FaMedium,FaYoutube,FaLinkedin,FaGithubSquare} from "react-icons/fa";
+
 const Footer = () => {
   return(
     <div className="container-fluid background">
@@ -14,10 +12,13 @@ const Footer = () => {
                     <h2 style={{color:"#ffffff"}}>Follow <span style={{color:"#20C20E"}}> Us</span></h2>
                     <p style={{color:'white'}}>Hackcura Private limited<br/>New Delhi, 110005 </p>
                     <h4 >
-                        <NavLink className="ms-0 icons" to="#"><AiOutlineFacebook/></NavLink>
-                        <NavLink className="ms-3 icons" to="#"><AiOutlineLinkedin/></NavLink>
-                        <NavLink className="ms-3 icons" to="#"><FaRegEnvelope/></NavLink>
-                        <NavLink className="ms-3 icons" to="#"><FaInstagram/></NavLink>
+                        <a className="ms-0 icons" href="https://www.facebook.com/Hackcura/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare/></a>
+                        <a className="ms-3 icons" href="https://github.com/hackcura" target="_blank" rel="noopener noreferrer"><FaGithubSquare/></a>
+                        <a className="ms-3 icons" href="https://twitter.com/hackcura" rel="noopener noreferrer" target="_blank"><FaTwitterSquare/></a>
+                        <a className="ms-3 icons" href="https://www.youtube.com/channel/UCVm2UboG1L6x3MiCcEW4KfA" rel="noopener noreferrer" target="_blank"><FaYoutube/></a>
+                        <a className="ms-3 icons" href="https://www.instagram.com/hackcura_/" rel="noopener noreferrer" target="_blank"><FaInstagramSquare/></a>
+                        <a className="ms-3 icons" href="https://medium.com/hackcura" rel="noopener noreferrer" target="_blank"><FaMedium/></a>
+                        <a className="ms-3 icons" href="https://www.linkedin.com/company/hackcura" rel="noopener noreferrer" target="_blank"><FaLinkedin/></a>
                     </h4>
 
                 </div>

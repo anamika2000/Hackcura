@@ -31,7 +31,7 @@ const Blogspage = (props) => {
                 {/* <h3>{value.Btitle}</h3>
                 <p>{value.sample_content}</p> */}
                 <iframe className="col-11 mt-4" src="https://abhishek-098.github.io/CovidInfo/" style={{height:'250px'}} title="Some web"/><br/>
-                <NavLink to="https://abhishek-098.github.io/CovidInfo/" target="_blank"><button className ="btn btn-success mb-4 mt-4 ">Continue Reading</button></NavLink>
+                <NavLink to="https://abhishek-098.github.io/CovidInfo/" target="_blank" skip-router="true"><button className ="btn btn-success mb-4 mt-4 ">Continue Reading</button></NavLink>
               </div>
             </div>
           </div>
