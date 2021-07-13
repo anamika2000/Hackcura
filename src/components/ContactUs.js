@@ -10,20 +10,20 @@ const ContactUs = () => {
         <div className="col-lg-6 col-12">
           <h1>CONTACT <span style={{color:"#20C20E"}}>US</span></h1>
           <form>
-            <div class="form-floating mt-lg-5 mt-5">
-              <input type="text" class="form-control input_boxes" id="floatingInput" placeholder="Name"/>
+            <div className="form-floating mt-lg-5 mt-5">
+              <input type="text" className="form-control input_boxes" id="floatingInput" placeholder="Name"/>
               <label htmlFor="floatingInput">Name*</label>
             </div>
-            <div class="form-floating mt-lg-4 mt-3">
-              <input type="email" class="form-control input_boxes" id="floatingInput" placeholder="name@example.com"/>
+            <div className="form-floating mt-lg-4 mt-3">
+              <input type="email" className="form-control input_boxes" id="floatingInput" placeholder="name@example.com"/>
               <label htmlFor="floatingInput">Email address*</label>
             </div>
-            <div class="form-floating mt-lg-4 mt-3">
-              <input type="text" class="form-control input_boxes" id="floatingInput" placeholder="9140716702"/>
+            <div className="form-floating mt-lg-4 mt-3">
+              <input type="text" className="form-control input_boxes" id="floatingInput" placeholder="9140716702"/>
               <label htmlFor="floatingInput">Phone no. (with country code)</label>
             </div>
-            <div class="form-floating mt-lg-4 mt-3">
-              <textarea type="text" class="form-control input_boxes" id="floatingTextarea2" placeholder="text"/>
+            <div className="form-floating mt-lg-4 mt-3">
+              <textarea type="text" className="form-control input_boxes" id="floatingTextarea2" placeholder="text"/>
               <label htmlFor="floatingTextarea2">Query or Reason*</label>
             </div>
             <div className="text-lg-start text-center">
@@ -40,7 +40,7 @@ const ContactUs = () => {
             <h4>OR</h4>
             <p>Mail to : founder@hackcura.in</p>
             <p className="pb-2">Mail to : support@hackcura.in</p>
-            <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowfullscreen="" loading="lazy" title="location-map"/></p>
+            <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowFullScreen="" loading="lazy" title="location-map"/></p>
           </div>
           {/* MAP COMPONENT */}
 
