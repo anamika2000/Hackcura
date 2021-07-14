@@ -21,6 +21,7 @@ const Navbar = () => {
                             <NavLink exact activeClassName ="menu_active"  className="nav-link mx-1" to='/Hackcura_frontend'>Home</NavLink>
                             <NavLink exact activeClassName ="menu_active"  className="nav-link mx-1" to ='/blogs'>Blogs</NavLink>
                             <NavLink exact activeClassName ="menu_active"  className="nav-link mx-1" to ='/contactus'>Contact Us</NavLink>
+                            <NavLink exact activeClassName ="menu_active"  className="nav-link mx-1" to ='/career'>Careers</NavLink>
                             <NavLink exact activeClassName ="menu_active"  className="nav-link mx-1" to ='/about'>About Us</NavLink>
                     </div>
                     </div>

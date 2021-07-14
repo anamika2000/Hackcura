@@ -6,6 +6,7 @@ import Navbar from './components/Navbar.js';
 import Blogspage from './components/Blogspage.js';
 import ContactUs from './components/ContactUs.js';
 import Footer from './components/Footer.js';
+import Career from './components/Career.js';
 
 function App() {
   return (<>
@@ -16,7 +17,7 @@ function App() {
                   <Route exact path = '/blogs' component={Blogspage} />
                   <Route exact path = '/about' component={Aboutpage} />
                   <Route exact path = '/contactus' component={ContactUs}/>
-                  
+                  <Route exact path = '/career' component={Career}/>
 
               </Switch>
               <Footer/>
