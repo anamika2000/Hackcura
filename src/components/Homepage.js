@@ -11,6 +11,7 @@ import image6 from './images/SCR.png';
 import image8 from './images/NPT.jpg';
 import rimage from './images/rotate.png';
 import { useSpring,animated } from 'react-spring'
+import { Spring } from 'react-spring';
 import vid from './images/Line1.mp4';
 
 import Typewriter from "typewriter-effect";
@@ -62,7 +63,19 @@ const Homepage = (props) => {
       <div className="row heading_top">
         <div className=" col-lg-7 col-12 heading_top_container text-light mx-auto text-center">
           {/* <h1 className="Main_heading">HACKCURA</h1> */}
-          <h1 className="Main_heading">HACKCURA</h1>
+          <Spring
+              from ={{ opacity:0, marginTop:-300}}
+              to = {{ opacity:1,marginTop:40 }}
+              config = {{delay:100,duration:1000}} 
+              >
+              {styles => (
+                <animated.div style={styles}>
+                <h1 className="Main_heading">HACKCURA</h1>
+                </animated.div>
+
+              )}   
+              </Spring>
+          
           <p className="Main_tagline my-3">
           <Typewriter 
             options={{

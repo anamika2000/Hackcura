@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style/contactus.css";
+import { Spring,animated } from 'react-spring';
 
 
 const ContactUs = () => {
@@ -34,14 +35,26 @@ const ContactUs = () => {
         <div className="col-lg-2"></div>
         {/* ADDRESS SECTION */}
         <div className="col-lg-4 mt-5">
-          <div className=" text-center" style={{backgroundColor:"rgba(0,0,0,0.8)", height:"auto",borderRadius:"20px",color:"white"}}>
-            <h3 className="pt-2 px-5">ADDRESS</h3>
-            <p className="pt-2 px-5">B-803 Happiness Tower, Sikka karmic greens, Sector 78, NOIDA, 201305<br/>Ph : +91 120-496-5608</p>
-            <h4>OR</h4>
-            <p>Mail to : founder@hackcura.in</p>
-            <p className="pb-2">Mail to : support@hackcura.in</p>
-            <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowFullScreen="" loading="lazy" title="location-map"/></p>
-          </div>
+        <Spring
+              from ={{ opacity:0, marginRight:-500,marginLeft:500}}
+              to = {{ opacity:1,marginRight:0,marginLeft:0 }}
+              config = {{delay:100,duration:1000}} 
+              >
+              {styles => (
+                <animated.div style={styles}>
+                <div className=" text-center" style={{backgroundColor:"rgba(0,0,0,0.8)", height:"auto",borderRadius:"20px",color:"white"}}>
+                  <h3 className="pt-2 px-5">ADDRESS</h3>
+                  <p className="pt-2 px-5">B-803 Happiness Tower, Sikka karmic greens, Sector 78, NOIDA, 201305<br/>Ph : +91 120-496-5608</p>
+                  <h4>OR</h4>
+                  <p>Mail to : founder@hackcura.in</p>
+                  <p className="pb-2">Mail to : support@hackcura.in</p>
+                  <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowFullScreen="" loading="lazy" title="location-map"/></p>
+                </div>
+                </animated.div>
+
+              )}   
+              </Spring>
+        
           {/* MAP COMPONENT */}
 
         </div>
