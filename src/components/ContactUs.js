@@ -36,9 +36,9 @@ const ContactUs = () => {
         {/* ADDRESS SECTION */}
         <div className="col-lg-4 mt-5">
         <Spring
-              from ={{ opacity:0, marginRight:-500,marginLeft:500}}
+              from ={{ opacity:1, marginRight:-100,marginLeft:100}}
               to = {{ opacity:1,marginRight:0,marginLeft:0 }}
-              config = {{delay:100,duration:1000}} 
+              config = {{delay:100,duration:500}} 
               >
               {styles => (
                 <animated.div style={styles}>
@@ -48,7 +48,18 @@ const ContactUs = () => {
                   <h4>OR</h4>
                   <p>Mail to : founder@hackcura.in</p>
                   <p className="pb-2">Mail to : support@hackcura.in</p>
-                  <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowFullScreen="" loading="lazy" title="location-map"/></p>
+                  <Spring
+                    from={{opacity:0}}
+                    to={{opacity:1}}
+                    config={{delay:1000,duration:2000}}
+                    >
+                    {styles =>(
+                      <animated.div style={styles}>
+                      <p><iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.278505516095!2d77.3824974151564!3d28.561398482445913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5a2e7897db%3A0x1e681b7cd1b3619c!2sHappiness%20Tower!5e0!3m2!1sen!2sin!4v1626190907657!5m2!1sen!2sin" allowFullScreen="" loading="lazy" title="location-map"/></p>
+                      </animated.div>
+                    )}
+                 
+                  </Spring>
                 </div>
                 </animated.div>
 
@@ -59,8 +70,8 @@ const ContactUs = () => {
 
         </div>
       </div>
-      <div className="row my-4">
-        <div className="col-lg-8 col-10 bg-danger text-white mx-auto" style={{borderRadius:"20px"}}>
+      <div className="row my-5">
+        <div className="col-lg-8 col-10 bg-danger text-white mx-auto mt-2" style={{borderRadius:"20px"}}>
           <h3 className="text-center py-4">HACKCURA VULNERABILITY DISCLOSURE PROGRAM</h3>
           <p className="text-center">If you come accross any security vulnerabilities (Critical, High, Medium or Low) in any of the asset of Hackcura, Please feel free to report it on<br/><span style={{fontWeight:'600'}}>Mail to : support@hackcura.in</span><br/>And claim Hackcura swag of Tshit or sticker on every unique vulnerability reported.</p>
         </div>
