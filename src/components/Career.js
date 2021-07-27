@@ -7,7 +7,10 @@ import { NavLink } from 'react-router-dom';
 
 
 // sample data for jobs:
-
+let sampleAPI = [{jType: "Internship",jTitle:"React Developer",jReq:["0-1 years of experience","Motivated","Smart Working","Comfortable with the API integration"],jPosted:3},
+                 {jType: "FTE",jTitle:"Blockchain Developer",jReq:["2-3 years of experience","Motivated","Smart Working"," Comfortable with 5 days a week work"],jPosted:5},
+                 {jType: "FTE",jTitle:"React Developer",jReq:["5+ years of experience","Motivated","Smart Working","Leadership skills"],jPosted:7},
+                 {jType: "Internship",jTitle:"Cybersecurity",jReq:["0-1 years of experience","Motivated","Smart Working","Believes to work with team"],jPosted:10}]
 
 
 const Career = () => {
@@ -32,86 +35,33 @@ const Career = () => {
             </form>
         </div>
         <div className="row">
-            <div className="col-lg-3 col-10 mx-auto my-lg-4 my-3">
+            { sampleAPI.map((val,index)=>{
+                return(
+                <div className="col-lg-3 col-10 mx-auto my-lg-4 my-3" key={index}>
                 <div className="card text-center">
                     <div className="card-header">
-                        Internship
+                        {val.jType}
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title">ReactJs Developer</h5>
+                        <h5 className="card-title">{val.jTitle}</h5>
                         <div className="card-text my-4">
-                            <p>5+ years of experience</p>
-                            <p>Smart working</p>
-                            <p>comfortable with 10 to 7 job</p>  
+                            {val.jReq.map((reqs,ind)=>{
+                                return(
+                                    <p key={ind}>{reqs}</p>
+                                )
+                            })} 
                         </div>
                         <NavLink to="/contactus" className="btn btn-success">Go somewhere</NavLink>
                     </div>
                     <div className="card-footer text-muted">
-                        2 days ago
+                        {`${val.jPosted} days`}
                     </div>
                 </div>
-                
-            </div>
-            <div className="col-lg-3 col-10 mx-auto my-lg-4 my-3">
-                <div className="card text-center">
-                    <div className="card-header">
-                        FTE
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">CyberSecurity Expert</h5>
-                        <div className="card-text my-4">
-                            <p>5+ years of experience</p>
-                            <p>Smart working</p>
-                            <p>comfortable with 10 to 7 job</p>  
-                        </div>
-                        <NavLink to="/contactus" className="btn btn-success">Go somewhere</NavLink>
-                    </div>
-                    <div className="card-footer text-muted">
-                        11 days ago
-                    </div>
-                </div>
-                
-            </div>
-            <div className="col-lg-3 col-10 mx-auto my-lg-4 my-3">
-                <div className="card text-center">
-                    <div className="card-header">
-                        Internship
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Data Science</h5>
-                        <div className="card-text my-4">
-                            <p>5+ years of experience</p>
-                            <p>Smart working</p>
-                            <p>comfortable with 10 to 7 job</p>  
-                        </div>
-                        <NavLink to="/contactus" className="btn btn-success">Go somewhere</NavLink>
-                    </div>
-                    <div className="card-footer text-muted">
-                        16 days ago
-                    </div>
-                </div>
-                
-            </div>
-            <div className="col-lg-3 col-10 mx-auto my-lg-4 my-3">
-                <div className="card text-center">
-                    <div className="card-header">
-                        FTE
-                    </div>
-                    <div className="card-body">
-                        <h5 className="card-title">Backend Developer</h5>
-                        <div className="card-text my-4">
-                            <p>5+ years of experience</p>
-                            <p>Smart working</p>
-                            <p>comfortable with 10 to 7 job</p>  
-                        </div>
-                        <NavLink to="/contactus" className="btn btn-success">Go somewhere</NavLink>
-                    </div>
-                    <div className="card-footer text-muted">
-                        19 days ago
-                    </div>
-                </div>
-                
-            </div>
+            </div> 
+
+            )})}
+
+               
         </div>
     
         
