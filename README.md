@@ -1,8 +1,3 @@
-Project is live @ https://abhishek-098.github.io/Hackcura_frontend/
-
-
-
-
 
 
 
