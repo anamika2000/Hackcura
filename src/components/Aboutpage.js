@@ -78,7 +78,7 @@ const Aboutpage = () => {
           <div className="col-lg-8 col-12 order-2 order-lg-1">
           <div className="my-lg-5 my-0 ps-lg-3">
               <div className="py-lg-4 py-3 text-lg-start text-center">
-                <h3 className="">ABHISHEK KUKRETI</h3>
+                <h3 className="">ABC</h3>
                 <h5 style={{color:"#20C20E"}}>Hackcura</h5>
                 <h6>Cyber security specialization</h6>
               </div>
