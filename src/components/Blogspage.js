@@ -7,7 +7,7 @@ import userimage from './images/user.jpg';
 // A static JSON for information required for this component
 const blogData = [{name:"UDIT BHADAURIA", jtitle:"Founder, Hackcura", DOBlog:"20 Jan, 2020",Btitle:"How all this started ?",sample_content:"What will it take to develop a hybrid learning model for Education, and what can we learn from India's Whisper moment back in the 1990's. Patterns are same. And now, all eyes on Educators.",link:"#"},
                   {name:"XYZ ABC", jtitle:"Frontend Developer, Hackcura", DOBlog:"15 Aug, 2020",Btitle:"Where should we get started ?",sample_content:"What will it take to develop a hybrid learning model for Education, and what can we learn from India's Whisper moment back in the 1990's. Patterns are same. And now, all eyes on Educators.",link:"#"},
-                  {name:"RAHUL RAO", jtitle:"Engineer, Hackcura", DOBlog:"09 Jan, 2021",Btitle:"How all this started ?",sample_content:"What will it take to develop a hybrid learning model for Education, and what can we learn from India's Whisper moment back in the 1990's. Patterns are same. And now, all eyes on Educators.",link:"#"}, ]
+                  {name:"PQR STU", jtitle:"Engineer, Hackcura", DOBlog:"09 Jan, 2021",Btitle:"How all this started ?",sample_content:"What will it take to develop a hybrid learning model for Education, and what can we learn from India's Whisper moment back in the 1990's. Patterns are same. And now, all eyes on Educators.",link:"#"}, ]
 
 const Blogspage = (props) => {
   return(
